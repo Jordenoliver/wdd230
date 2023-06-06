@@ -1,0 +1,7 @@
+@media screen and (min-width: 500px) {
+ header {
+    background-color: navy;
+    color: white;
+    grid-template-columns: 1fr 1fr;
+ }
+}
