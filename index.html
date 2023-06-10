@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Assignment Portal for WWD230 class.">
-    <title>Jorden Oliver's Assignment Portal</title>
+    <meta name="Author" content="Jorden Oliver">
+    <meta name="Description"
+        content="Jorden Oliver's WDD230 Course Assignment Portal. This is the WDD230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD230 course">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/small.css"/>
-    <link rel="stylesheet" href="css/medium.css"/>
-    <script defer src="js/dates.js"></script>
-    <script defer src="js/modify.js"></script>
- 
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/getDates.js" defer></script>
+    <meta property="Title" content="WDD230 - Portal - Jorden Oliver">
+    <meta property="Type" content="Website">
+    <meta property="og:Description"
+        content="Jorden Oliver's WDD230 Course Assignment Portal. This is the WDD230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD230 course">
+    <meta property="og:url" content="https://jordenoliver.github.io/wdd230/">
+    <title>WDD230 - Portal - Jorden Oliver</title>
 </head>
+
 <body>
+    <nav>
+        <div id="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
+            </svg>
+        </div>
+        <div id="close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                <path
+                    d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z" />
+            </svg>
+        </div>
+        <div>
+            <ul id="menu-items">
+                <li class="menu-item">
+                    <a href="https://www.byui.edu/">BYU-Idaho</a>
+                </li>
+                <li class="menu-item">
+                    <a href="https://github.com/Jordenoliver/wdd230/">Github</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <header>
-        <img src="images/profile.jpeg" alt="Student photo image"/>
-        <h1>Jorden Oliver</h1>
+        <img id="profile-image" src="images/profile.jpeg" alt="Profile Picture" loading="lazy">
+        <h1 id="profile-name">Jorden Oliver</h1>
     </header>
     <main>
-        <h2>WDD 230: Assignment Portal</h2>
-        <ul>
-            <li>Lesson 02: <a href=></a></li>
-            <li>Lesson 03: <a href=></a></li>
-            <li>Lesson 04: <a href=></a></li>
-            <li>Lesson 05: <a href=></a></li>
-            <li>Lesson 06: <a href=></a></li>
-            <li>Lesson 07: <a href=></a></li>
-            <li>Lesson 07: <a href=></a></li>
-            <li>Lesson 08: <a href=></a></li>
-            <li>Lesson 08: <a href=></a></li>
-            <li>Lesson 09: <a href=></a></li>
-            <li>Lesson 09: <a href=></a></li>
-            <li>Lesson 09: <a href=></a></li>
-            <li>Lesson 10: <a href=></a></li>
-            <li>Lesson 11: <a href=></a></li>        
-        </ul>
+        <h2>WDD230: Course Activity Portal</h2>
+        <div class="card-container">
+            <section class="card" id="card-1">
+                <h3>Learning Activities</h3>
+                <ul id="activities">
+                    
+                </ul>
+            </section>
+            <section class="card" id="card-3">
+                <h3>Information</h3>
+                <div id="weather">
+                    <h4>Weather</h4>
+                    <img id="weatherIcon">
+                    <p id="weatherTemp"></p>
+                    <p id="weatherDesc"></p>
+                </div>
+                <p id="visitCount"></p>
+            </section>
+        </div>
+       
     </main>
     <footer>
-
+        <p class="footer-text">
+            &copy; <span id="year"></span> | Jorden Oliver | United States of America
+        </p>
+        <p class="highlight" id="lastModified"></p>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>   
-    <script>
-        WebFont.load({google: {families: ['Dancing Script', 'Railway']}});
-    </script>
 </body>
-</html> 
+
+</html>

@@ -1,0 +1,76 @@
+/* Media query with break point of 600px */
+@media screen and (min-width: 600px) {
+    nav {
+        justify-content: right;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    nav li {
+        display: inline-block;
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    header {
+        justify-content: left;
+    }
+
+    header h1 {
+        padding: 5rem;
+        font-size: 3rem;
+    }
+
+    header #profile-image {
+        border: 5px solid #fff;
+        width: 7rem;
+    }
+
+    .card-container {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    }
+
+    main h2 {
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    .card{
+        width: 400px;
+    }
+
+    #hero-content{
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.299);
+        z-index: 1;
+        font-family: cursive;
+        padding: 2%;
+    }
+
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 0.01fr 1fr;
+        padding: 2rem;
+        max-width: 960px;
+        grid-gap: 1rem;
+      } 
+    
+    .contact form {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    
+    .contact #formResponse {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+}
