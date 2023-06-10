@@ -1,5 +1,5 @@
 /* Media query with break point of 600px */
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 600px) {
     nav {
         justify-content: right;
         align-items: center;
