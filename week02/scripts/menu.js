@@ -1,22 +1,27 @@
-const menubutton = document.querySelector("#menu-button");
-const menuitems = document.querySelectorAll(".menu-item");
+const menuButton = document.getElementById('menu-button');
+const menuItems = document.querySelectorAll('.menu-item');
+const closeButton = document.getElementById('close-button');
 
-menubutton.addEventListener("click", () => {
-	menuitems.forEach((item) => item.classList.toggle("open"));
-	menubutton.classList.toggle("close");
-});
+for (let i = 0; i < menuItems.length; i++) {
+    menuItems[i].classList.add('hidden');
+}
+closeButton.classList.add('hidden');
 
-const modeButton = document.querySelector("#mode");
-const main = document.querySelector("main");
+closeButton.addEventListener('click', function() {
+    for (let i = 0; i < menuItems.length; i++) {
+        menuItems[i].classList.add('hidden');
+    }
+    closeButton.classList.add('hidden'); 
+    menuButton.classList.remove('hidden');
+}
+);
 
-modeButton.addEventListener("click", () => {
-	if (modeButton.textContent.includes("☑️")) {
-		main.style.background = "#000";
-		main.style.color = "#fff";
-		modeButton.textContent = "❎";
-	} else {
-		main.style.background = "#eee";
-		main.style.color = "#000";
-		modeButton.textContent = "☑️";
-	}
-});
+
+menuButton.addEventListener('click', function() {
+    for (let i = 0; i < menuItems.length; i++) {
+        menuItems[i].classList.remove('hidden');
+    }
+    closeButton.classList.remove('hidden');
+    menuButton.classList.add('hidden');
+}
+);
