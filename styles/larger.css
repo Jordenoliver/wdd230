@@ -4,6 +4,7 @@
         justify-content: right;
         align-items: center;
         flex-direction: row-reverse;
+        gap: 2rem;
     }
 
     nav li {
