@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Jorden Oliver">
+    <title>WDD230 - Portal - Jorden Oliver</title>
     <meta name="Description" content="Jorden Oliver's WDD230 Course Assignment Portal. This is the WDD230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD230 course">
+    <meta name="Author" content="Jorden Oliver">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="scripts/getDates.js" defer></script>
     <meta property="Title" content="WDD230 - Portal - Jorden Oliver">
     <meta property="Type" content="Website">
-    <meta property="og:Description"
-        content="Jorden Oliver's WDD230 Course Assignment Portal. This is the WDD230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD230 course">
     <meta property="og:url" content="https://jordenoliver.github.io/wdd230/">
-    <title>WDD230 - Portal - Jorden Oliver</title>
+    <link rel="stylesheet" href="week02/styles/menu.css">
+    <script src="week02/scripts/menu.js"defer></script>
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
@@ -39,27 +41,27 @@
 </header>
 <main>
     <h2>WDD230: Course Activity Portal</h2>
-    <div class="card-container">
-        <section class="card" id="card-1">
-            <h3>Learning Activities</h3>
-            <div id="activities">
-                <h5>Week 1:<a href="week01/media-query.html">Media Query</a> <a href="week01/holygrail.html">Holy Grail</a> <a href="week01/chamber-site-plan.html">Chamber Site Plan</a></h5>
-            </div>
-        </section>
-        <section class="card" id="card-3">
-            <h3>Information</h3>
-            <div id="weather">
-                <h4>Weather</h4>
-            </div>
-            <p id="visitCount"></p>
-        </section>
-        <section class="project"  id="card-2">
-            <h3>Project</h3>
-            <div id="project">
-                <a href="week01/chamber-site-plan.html">Chamber</a>
-            </div>
-        </section>
+    <div class="card-container"></div>
+<section class="card" id="card-1">
+    <h3>Learning Activities</h3>
+    <div id="activities">
+        <h5>Week 1:<a href="week01/media-query.html">Media Query</a> <a href="week01/holygrail.html">Holy Grail</a> <a href="week01/chamber-site-plan.html">Chamber Site Plan</a></h5>
+        <li>Week 2:<a href="week02/design.html">Design Principles</a> <a href="week02/bom.html">DOM Manipulation</a> <a href="https://codepen.io/katielynne/pen/qBymPYV">Hamburger Menu</a></li>
     </div>
+</section>
+<section class="card" id="card-3">
+    <h3>Information</h3>
+    <div id="weather">
+        <h4>Weather</h4>
+    </div>
+    <p id="visitCount"></p>
+</section>
+<section class="project"  id="card-2">
+    <h3>Project</h3>
+    <div id="project">
+        <a href="week01/chamber-site-plan.html">Chamber</a>
+    </div>
+</section>
 
 </main>
     <footer>
@@ -68,6 +70,9 @@
         </p>
         <p class="highlight" id="lastModified"></p>
     </footer>
+
+    <script src="scripts/getDates.js" defer></script>
+
 </body>
 
 </html>
