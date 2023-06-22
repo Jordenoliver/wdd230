@@ -1,8 +1,5 @@
 @media only screen and (min-width: 744px) {
     .nav {
-        .mobile-toggle {
-            display: none;
-        }
 
         .contents {
             flex-direction: row;
@@ -12,6 +9,7 @@
             margin: auto;
         }
     }
+
 
     .home {
         display: flex;
