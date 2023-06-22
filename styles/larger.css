@@ -22,28 +22,26 @@
             flex-basis: 100%;
         }
 
-        .card {
-            .learning_activites {
-                flex-basis: 57.5%;
+        
+        .learning_activites {
+            flex-basis: 57.5%;
+        }
 
-                .text_contents {
-                    .list {
-                        .item {
-                            &:not(:last-child) {
-                                margin-bottom: 1rem;
-                            }
+            
 
-                            .sub_text {
-                                display: inline;
-                            }
-                        }
-                    }
-                }
-            }
-
-            &.information {
-                flex-basis: 37.5%;
-                margin-top: 0;
+        .item {
+            &:not(:last-child) {
+                margin-bottom: 1rem;
             }
         }
+
+        .sub_text {
+            display: inline;
+        }
+
+        .information {
+            flex-basis: 37.5%;
+            margin-top: 0;
+        }
+        
     }
