@@ -6,17 +6,17 @@ let chaptersArray = getChapterList () || [];
 
 chaptersArray.forEach(chapter => {
     displayList(chapter);
-});
+  });
 
-button.addEventListener('click', function() { 
-    if (input.value !='') {
-        displayList(input.value);
-        chaptersArray.push(input.value);
-        setChapterList();
-    input.value = '';
-    input.focus();
+  button.addEventListener('click', () => {
+    if (input.value != '') {
+      displayList(input.value);
+      chaptersArray.push(input.value);
+      setChapterList();
+      input.value = '';
+      input.focus();
     }
-});
+  });
 
     const listItem = document.createElement('li');
     const listText = document.createElement('span');
@@ -36,31 +36,31 @@ button.addEventListener('click', function() {
 
     input.focus();
 
-    function displayList(listItem) {
+    function displayList(item) {
         let li = document.createElement('li');
-        let delBtn = document.createElement('button');
+        let deletebutton = document.createElement('button');
         li.textContent = item;
-        delBtn.textContent = 'X';
-        delBtn.classList.add('delete');
-        li.append(delBtn);
+        deletebutton.textContent = '❌';
+        deletebutton.classList.add('delete');
+        li.append(deletebutton);
         list.append(li);
-        delBtn.addEventListener('click', function () {
-            list.removeChild(li);
-            deleteChapter(li.textContent);
-            input.focus ();
+        deletebutton.addEventListener('click', function () {
+          list.removeChild(li);
+          deleteChapter(li.textContent);
+          input.focus();
         });
-    }
+      }
 
-    function setChapterList() {
+      function setChapterList() {
         localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray));
-    }
+      }
 
     function getChapterList() {
         return JSON.parse(localStorage.getItem('myFavBOMList'));
-    }
+      }
 
     function deleteChapter(chapter) {
         chapter = chapter.slice(0, chapter.length - 1);
         chaptersArray = chaptersArray.filter(item => item !== chapter);
         setChapterList();
-    }
+      }
