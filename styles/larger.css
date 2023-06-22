@@ -1,14 +1,13 @@
 @media only screen and (min-width: 744px) {
-    .nav {
+    
 
-        .contents {
-            flex-direction: row;
-            opacity: 1;
-            height: fit-content;
-            max-width: 100rem;
-            margin: auto;
+    .contents {
+        flex-direction: row;
+        opacity: 1;
+        height: fit-content;
+        max-width: 100rem;
+        margin: auto;
         }
-    }
 
 
     .home {
@@ -17,13 +16,14 @@
         justify-content: space-between;
         max-width: 100rem;
         margin: auto;
+        }
 
-        .course_title {
+        .coursetitle {
             flex-basis: 100%;
         }
 
         .card {
-            &.learning_activites {
+            .learning_activites {
                 flex-basis: 57.5%;
 
                 .text_contents {
@@ -47,4 +47,3 @@
             }
         }
     }
-}
