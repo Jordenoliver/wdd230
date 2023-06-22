@@ -9,7 +9,6 @@
         margin: auto;
         }
 
-
     .home {
         display: flex;
         flex-wrap: wrap;
@@ -21,18 +20,13 @@
         .coursetitle {
             flex-basis: 100%;
         }
-
         
         .learning_activites {
             flex-basis: 57.5%;
-        }
-
-            
+        } 
 
         .item {
-            &:not(:last-child) {
-                margin-bottom: 1rem;
-            }
+            margin-bottom: 1rem;
         }
 
         .sub_text {
