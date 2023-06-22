@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+    <link rel="stylesheet" href="styles/reponsive-images.css">
+    
+</head>
+<body>
+    <div class="hero">
+        <picture>
+          <source srcset="images/hero-small.webp" media="(max-width: 500px)" media="(max-height: 250px)">
+          <source srcset="images/hero-medium.webp" media="(max-width: 1000px)" media="(max-height: 500px)">
+          <img src="images/hero-large.jpeg" alt="table setting" width="1500" height="750">
+        </picture>
+      </div>
+</body>
+</html>
