@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="WDD 230 Chamber Of Commerce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jorden Oliver">
+    <meta property="og:title" content="Thatcher Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jordenoliver.github.io/wdd230/chamber/index.html">
+    <title> Thatcher Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    
+</head>
+<body>
+    <header>
+        <div id="banner" style="display: none;">
+        Please come and join us for the Chamber of Commerce Meet and Greet on Wednesday at 7pm at City Hall! We will have cookies
+    </div>
+
+    <script>
+        const currentDay = new Date().getDay();
+        const banner = document.getElementById("banner");
+        if (currentDay >= 1 && currentDay <=3) {
+            banner.style.display = "block";
+        }
+    </script>
+        <section class="thatcher">
+            <h1>Thatcher Chamber of Commerce</h1>
+    </section>
+   
+        <button>=</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discovery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="discover-block">
+        <h2 class="discover-thatcher">Discover Thatcher</h2>
+        <div class="discover-grid">
+            <div class="demographics">
+            <section class="column">
+                <h3>Quick Facts</h3>
+                <ul>
+                  <li>Founded: 1740</li>
+                  <li>Population: 5,310 as of 2021</li>
+                  <li>Elevation: 2,910 ft</li>
+                  <li>Home of Eastern Arizona College</li>
+                </ul>
+                  <div class="visits"><p class="mod">Days Since Last Visit: <span id="visit"></span></p></div>
+                </section>
+                <div class="discover-events">
+                  <h3 class="events-header">EVENTS</h3>
+                  <h4>Thatcher city hall meetings: first and third Wednesday of every month at 7pm</h4>
+                  <p>Join join us and voice your opinions about Thatcher Arizona, We would love to hear your voices</p>
+                  <h4>Swim practice for children, EAC's pool at 11am every saturday</h4>
+                  <p>Come join us as we teach children to swim every saturday for two hours completly free.</p>
+                </div>
+            </div>
+            <div id="discover-imgs">
+            <section class="image">
+                <img class="horseshoe-img" src="images/gctemple.webp" alt="Picture of graham county Temple" loading="lazy">
+                <h2>The Temple is an amazing sight right on the edge of town</h2>
+            </section>
+            <section class="image">
+                <img id="church-img" src="images/eac.webp" alt="Picture of Eac" loading="lazy">
+                <h2>Eastern Arizona College, a community college that many go to, and even has a marching band.</h2>
+            </section>
+            <section class="image">
+              <img id="toms-diner-img" src="images/mtgraham.webp" alt="Picture of mt graham" loading="lazy">
+              <h2>Mt Graham is an amzing sight to see, expecally when covored in snow</h2>
+            </section>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+        <section class="footer">
+            <h5 id="name/address">City of Thatcher Chamber of Commerce  /  1233 Main Street, Thatcher, AZ 85629</h5>
+            <h5 id="email/phone">info@thatchercommerce.com  /  (928)111-2222</h5>
+            <h5>Jorden Oliver  /  WDD 230 Project  /  &copy; <span id="year"></span> </h5>
+        </section>
+
+    
+        <h5 class="highlight" id="lastModified">Last modified: <script>document.write(document.lastModified)</script></h5>
+    </footer>
+    
+
+    <script src="scripts/getDates.js"></script>
+
+    
+</body>
+</html>

@@ -1,13 +1,71 @@
-@media only screen and (min-width: 38rem) {
-    header {grid-template-columns: auto auto;}
-    header button {display: none;}
-
+@media screen and (max-width: 600px) {
     nav {
-        position: initial;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    nav *:nth-child(1) {
+        padding-right: 0;
+    }
+
+    main {
         display: block;
     }
-    nav ul {
-        display: flex;
-        justify-content: flex-end;
+
+    section {
+        margin: 2rem;
     }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+   
+}
+
+@media only screen and (min-width: 700px){
+    .discover-grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 3%;
+        column-gap: 20px;
+    }
+    .column{
+        grid-column: 1/2;
+    }
+    #discover-imgs{
+        grid-column: 2/3;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    .horseshoe-img:hover, #church-img:hover, #toms-diner-img:hover {
+        box-shadow: 0 0 50px black;
+        
+    }
+    
 }
