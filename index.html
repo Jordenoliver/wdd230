@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="Jorden Oliver's WDD230 Course Assignment Portal.">
+    <meta name="Description" content="Jorden Oliver's WDD230 Course Assignment Portal">
     <meta name="Author" content="Jorden Oliver">
     <meta property="og:url" content="https://jordenoliver.github.io/wdd230/">
-    <title>WDD230 - Portal - Jorden Oliver</title>
+    <title>Jorden Oliver - WDD 230 - Web Frontend Development</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -23,6 +23,12 @@
 </head>
 
 <body>
+    <header>
+        <img id="profile-image" src="images/profile.webp" alt="Profile Picture" loading="lazy">
+        <h1 id="profile-name">Jorden Oliver</h1>
+        <h2>WDD230: Course Activity Portal</h2>
+    </header>
+
     <nav>
         <div id="menu-button">
             <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
@@ -43,11 +49,7 @@
         </div>
         <div id="mode">☑️</div>
     </nav>
-    <header>
-        <img id="profile-image" src="images/profile.webp" alt="Profile Picture" loading="lazy">
-        <h1 id="profile-name">Jorden Oliver</h1>
-        <h2>WDD230: Course Activity Portal</h2>
-    </header>
+
     <main>
         <div id="hero">
             <picture>
@@ -59,6 +61,7 @@
                 <p>Tucson, Arizona Temple</p>
             </div>
         </div>
+
         <h2 class="coursetitle">WDD 230: Course Activity Portal</h2>
         <div class="card-container">
             <section class="card" id="card-1">
@@ -69,6 +72,7 @@
                     <li>Week 3:<a href="week03/images/landscape.webp">WebP</a> <a href="week03/lazyload.html">Lazy Loading</a> <a href="week03/reponsive-images.html">Responsive Images</a> <a href="week03/webstorage.html">Web Storage API</a></li>
                 </ul>
             </section>
+
             <section class="card" id="card-3">
                 <h3>Information</h3>
                 <div id="weather">
@@ -76,6 +80,7 @@
                 </div>
                 <p id="visitCount"></p>
             </section>
+
             <section class="project"  id="card-2">
                 <h3>Project</h3>
                 <div id="project">
@@ -83,6 +88,7 @@
                     <a  href="chamber/index.html">Chamber site</a>
                 </div>
             </section>
+            
             <section id="map">
                 <h3>Map</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d160605.70676809282!2d-110.89918712877379!3d32.00537488097998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1687397481772!5m2!1sen!2sus" 
@@ -91,6 +97,7 @@
             </section>
         </div>
     </main>
+
     <footer>
         <p class="footer-text">
             &copy; <span id="year"></span> | Jorden Oliver | United States of America
