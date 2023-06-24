@@ -1,8 +1,8 @@
 header{
-    background-color: #290CE6;
+    background-color: gray;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr;
-    color: #ffde92;
+    color: white;
     padding: 20px;
 }
 .logo{
@@ -18,7 +18,7 @@ header h1{
 header p{
     justify-content: center;
     grid-column: 4/5;
-    color: white;
+    color: gray;
     padding-top: 40px;
 }
 
@@ -29,7 +29,7 @@ header p{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	background: white;
+	background: gray;
 	z-index: 10;
 	overflow: hidden;
 	box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
@@ -40,7 +40,7 @@ header p{
 	text-align: center;
 	width: 12rem;
 	padding: 1rem;
-	color: #290CE6;
+	color: white;
 	position: relative;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	transition: background 0.5s ease-in-out;
@@ -48,8 +48,8 @@ header p{
 
 .nav li a:hover,
 .nav li:first-child a {
-	background: #ffde92;
-	color: black;
+	background: black;
+	color: white;
 }
 
 li a.nav-item {
@@ -64,7 +64,6 @@ li a.open {
 	content: "✖ ";
 }
 
-/* discover page main */
 .column {
     display: grid;
     grid-template-columns: 1fr;
@@ -72,7 +71,6 @@ li a.open {
     padding: 5px;
 }
 
-/* hero box */
 #hero{
     display: block;
 }
@@ -86,13 +84,13 @@ li a.open {
     position: relative; bottom: 165px;
 }
 .button{
-    background-color: #ffde92;
-    color: black;
+    background-color: gray;
+    color: white;
     padding: 30px;
     font-size: 30px;
 }
 .button:hover{
-    background-color: #290CE6;
+    background-color: gray;
     color: white;
 }
 /* content section */
@@ -107,7 +105,8 @@ li a.open {
     border-radius: 10px;
 }
 .column, .visits, .discover-events{
-    background-color: #ffde92;
+    background-color: gray;
+    color: white;
     padding: 10px;
     margin: 10px;
 }
@@ -140,8 +139,8 @@ li a.open {
 }
 /* footer section */
 footer{
-    background-color: #290CE6;
+    background-color: gray;
     padding: 20px;
-    color: #ffde92;
+    color: white;
     text-align: center;
 }
