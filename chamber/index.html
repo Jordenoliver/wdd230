@@ -3,99 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="WDD230 Chamber Of Commerce">
+    <meta name="description" content="WDD 230 Chamber Of Commerce">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jorden Oliver">
     <meta property="og:title" content="Thatcher Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jordenoliver.github.io/wdd230/chamber/index.html">
+    <title> Thatcher Chamber of Commerce</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-    <title> Thatcher Chamber of Commerce</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
-    
 </head>
+
 <body>
     <header>
-        <div id="banner" style="display: none;">
-        Please come and join us for the Chamber of Commerce Meet and Greet on Wednesday at 7pm at City Hall! We will have cookies
-    </div>
-
-    <script>
-        const currentDay = new Date().getDay();
-        const banner = document.getElementById("banner");
-        if (currentDay >= 1 && currentDay <=3) {
-            banner.style.display = "block";
-        }
-    </script>
-        <section class="thatcher">
-            <h1>Thatcher Chamber of Commerce</h1>
-    </section>
-
-   
-        <button>=</button>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discovery</a></li>
-            </ul>
-        </nav>
+        <h1>Thatcher Area Chamber of Commerce</h1>
+        <p>"Please come and join us for the Chamber of Commerce Meet and Greet on Wednesday at 7pm at City Hall! We will have cookies"</p>
     </header>
+
+    <nav class="navbar" >
+        <ul class="nav">
+          <li title="menu home"><a href="#" id="nav-button">&#9776; Menu</a></li>
+          <li title="home"><a href="index.html" class="nav-item">Home</a></li>
+          <li title="discover"><a href="discover.html" class="nav-item">Discover</a></li>
+          <li title="join"> <a class="nav-item" >Join</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <div class="Grid">
-        
-            <section class="hero">
-                <h3>Join our Chamber!</h3>
-                <form method="get" action="join.html"></form>
-                    <input type="submit" value="Join Now" class="submitBtn">
-                <img id="hero" src="images/contentpicture.webp" alt="city sign"> 
+        <div id="hero">
+            <section>
+                <img class="hero-img" src="images/contentpicture.webp" alt="Content Picture">
             </section>
-            <section class="opening">
-                <h3>News</h3>
-                <h4>Starbucks no more!</h4>
-                <p>The Starbucks we have all been waiting for has decided to sell the project
-                    to Panda Express. This is due to the fact it has been over five years and
-                    the building is still not done being built.
-                </p>
-            </section>
-             
-            <section class="weather">
-                <h3>Weather</h3>
-                <p>The current temperature in</p>
-                <p>Thatcher, AZ is <span id="current-temp"></span></p>
-                <figure>
-                <figcaption>
-
-                </figcaption>
-                </figure>
-                <div id="foreCast"></div>
-            </section>
-            
-            <section class="events">
-                <h3>Current Events</h3>
-                <h4>Join us on Monday, July 4th, at the Safford Court House for a firework display like never before, starting at 7pm!</h4>
-              
-            </section>
-
-            
-                <section id="spotLighted">
-                    <h3>Business Spotlight</h3>
-                    <ul>
-                    </ul>
+            <div class="button-box">
+                <a class="button">Join Today!</a>
+            </div>
+        </div>
+        <section id="content">    
+            <div >
+                <section id="events-box">
+                    <h2>Current Events</h2>
+                    <h3>Firework show</h3>
+                    <p>Join us on Monday, July 4th, at the Safford Court House for a firework display like never before, starting at 7pm!</p>
                 </section>
-            </div>     
-        </main>
+            </div>
+            <div id="news-box">
+                <h2>Nwes</h2>
+                <h3>Starbucks no more</h3>
+                <h3>The Starbucks we have all been waiting for has decided to sell the project
+                    to Panda Express. This is due to the fact it has been over five years and
+                    the building is still not done being built.</h3>   
+            </div>
+            <div>
+                <section id = "weather-box">
+                    <h2>Today's Weather</h2>
+                    <p></p>
+                </section>
+            </div>
+        </section>
+    </main>
     <footer>
         <section class="footer">
-            <h5 id="name">City of Thatcher Chamber of Commerce</h5>
-            <h5 id="address">1233 Main Street, Thatcher, AZ 85629</h5>
-            <h5 id="email">info@thatchercommerce.com  /  (928)111-2222</h5>
+            <h5 id="name/address">City of Thatcher Chamber of Commerce  /  1233 Main Street, Thatcher, AZ 85629</h5>
+            <h5 id="email/phone">info@thatchercommerce.com  /  (928)111-2222</h5>
             <h5>Jorden Oliver  /  WDD 230 Project  /  &copy; <span id="year"></span> </h5>
         </section>
 
@@ -105,6 +80,7 @@
     
 
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
 
     
 </body>

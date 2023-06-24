@@ -20,34 +20,23 @@
     <link rel="stylesheet" href="styles/normalize.css">
     
 </head>
+
 <body>
     <header>
-        <div id="banner" style="display: none;">
-        Please come and join us for the Chamber of Commerce Meet and Greet on Wednesday at 7pm at City Hall! We will have cookies
-    </div>
-
-    <script>
-        const currentDay = new Date().getDay();
-        const banner = document.getElementById("banner");
-        if (currentDay >= 1 && currentDay <=3) {
-            banner.style.display = "block";
-        }
-    </script>
-        <section class="thatcher">
-            <h1>Thatcher Chamber of Commerce</h1>
-    </section>
-   
-        <button>=</button>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discovery</a></li>
-            </ul>
-        </nav>
+        <h1>Thatcher Area Chamber of Commerce</h1>
+        <p>"Please come and join us for the Chamber of Commerce Meet and Greet on Wednesday at 7pm at City Hall! We will have cookies"</p>
     </header>
+
+    <nav class="navbar" >
+        <ul class="nav">
+          <li title="menu home"><a href="#" id="nav-button">&#9776; Menu</a></li>
+          <li title="home"><a href="index.html" class="nav-item">Home</a></li>
+          <li title="discover"><a href="discover.html" class="nav-item">Discover</a></li>
+          <li title="join"> <a class="nav-item" >Join</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <div id="discover-block">
         <h2 class="discover-thatcher">Discover Thatcher</h2>
         <div class="discover-grid">
             <div class="demographics">
@@ -59,33 +48,32 @@
                   <li>Elevation: 2,910 ft</li>
                   <li>Home of Eastern Arizona College</li>
                 </ul>
-                  <div class="visits"><p class="mod">Days Since Last Visit: <span id="visit"></span></p></div>
+                    <div class="visits"><p class="mod">Days Since Last Visit: <span id="visit"></span></p></div>
                 </section>
                 <div class="discover-events">
-                  <h3 class="events-header">EVENTS</h3>
-                  <h4>Thatcher city hall meetings: first and third Wednesday of every month at 7pm</h4>
-                  <p>Join join us and voice your opinions about Thatcher Arizona, We would love to hear your voices</p>
-                  <h4>Swim practice for children, EAC's pool at 11am every saturday</h4>
-                  <p>Come join us as we teach children to swim every saturday for two hours completly free.</p>
+                    <h3 class="events-header">EVENTS</h3>
+                    <h4>Thatcher city hall meetings: first and third Wednesday of every month at 7pm</h4>
+                    <p>Join join us and voice your opinions about Thatcher Arizona, We would love to hear your voices</p>
+                    <h4>Swim practice for children, EAC's pool at 11am every saturday</h4>
+                    <p>Come join us as we teach children to swim every saturday for two hours completly free.</p>
                 </div>
             </div>
             <div id="discover-imgs">
-            <section class="image">
-                <img class="horseshoe-img" src="images/gctemple.webp" alt="Picture of graham county Temple" loading="lazy">
+            <picture class="image">
+                <img class="gctemple-img" src="images/gctemple.webp" alt="Picture of graham county Temple" loading="lazy">
                 <h2>The Temple is an amazing sight right on the edge of town</h2>
-            </section>
-            <section class="image">
-                <img id="church-img" src="images/eac.webp" alt="Picture of Eac" loading="lazy">
+            </picture>
+            <picture class="image">
+                <img id="eac-img" src="images/eac.webp" alt="Picture of Eac" loading="lazy">
                 <h2>Eastern Arizona College, a community college that many go to, and even has a marching band.</h2>
-            </section>
-            <section class="image">
-              <img id="toms-diner-img" src="images/mtgraham.webp" alt="Picture of mt graham" loading="lazy">
+            </picture>
+            <picture class="image">
+              <img id="mtgraham-img" src="images/mtgraham.webp" alt="Picture of mt graham" loading="lazy">
               <h2>Mt Graham is an amzing sight to see, expecally when covored in snow</h2>
-            </section>
-            </div>
-          </div>
+            </picture>
         </div>
     </main>
+
     <footer>
         <section class="footer">
             <h5 id="name/address">City of Thatcher Chamber of Commerce  /  1233 Main Street, Thatcher, AZ 85629</h5>
@@ -97,8 +85,8 @@
         <h5 class="highlight" id="lastModified">Last modified: <script>document.write(document.lastModified)</script></h5>
     </footer>
     
-
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
 
     
 </body>
