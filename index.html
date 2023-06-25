@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Jorden Oliver's WDD230 Course Assignment Portal">
     <meta name="Author" content="Jorden Oliver">
-    <meta property="og:url" content="https://jordenoliver.github.io/wdd230/">
     <title>Jorden Oliver - WDD 230 - Web Frontend Development</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
@@ -18,91 +17,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Jorden Oliver's Course Assignment Page">
+    <meta property="og:type" content="website">
+    <meta property="og:img" content="https://th.bing.com/th/id/R.e9c1897d146ab4680a63fefb4eb0ac7c?rik=DwIOtU3A2DXw3g&riu=http%3a%2f%2ftownmapsusa.com%2fimages%2fmaps%2fmap_of_roxbury_nj.jpg&ehk=9fcUQhpEYHta2%2fLPVELe05uYDWx9je9pWUSNFVv69c0%3d&risl=&pid=ImgRaw&r=0">
+    <meta property="og:url" content="https://jordenoliver.github.io/wdd230/">
 </head>
 
 <body>
-    <header>
-        <img id="profile-image" src="images/profile.webp" alt="Profile Picture" loading="lazy">
-        <h1 id="profile-name">Jorden Oliver</h1>
-        <h2>WDD230: Course Activity Portal</h2>
-    </header>
-
-    <nav>
-        <div id="menu-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-                <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
-            </svg>
-        </div>
-        <div id="close-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-                <path d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z" />
-            </svg>
-        </div>
-        <div>
-            <ul class="contents">
-                <li class="menu-item"><a href="https://github.com/Jordenoliver/wdd230/">Github</a></li>
-                <li class="menu-item"><a href="https://byupathway.lds.org/">BYU-Pathway Worldwide</a></li>
-                <li class="menu-item"><a href="./chamber/index.html">chamber site</a></li>
-            </ul>
-        </div>
-        <div id="mode">☑️</div>
+    <nav class="navbar" >
+        <ul class="nav">
+          <li title="home"><a href="#" id="nav-button">&#9776; Menu</a></li>
+          <li title="linkedin"><a href="https://github.com/Jordenoliver/wdd230/" class="nav-item">Github</a></li>
+          <li title="BYU-Pathway"><a href="https://byupathway.lds.org/" class="nav-item">BYU-pathway Worldwide</a></li>
+          <li title="DarkMode"><a class="nav-item" id="mode">☀</a></li>
+        </ul>
     </nav>
 
+    <header>
+        <img class="prof-pic" src="images/profile.webp" alt="Profile Picture" loading="lazy">
+        <h1>Jorden Oliver</h1>
+    </header>
+
     <main>
-        <div id="hero">
-            <picture>
-                <source media="(max-width: 400px)" srcset="images/temple-400px.webp">
-                <source media="(max-width: 960px)" srcset="images/temple-960px.webp">
-                <img src="images/temple-960px.webp" alt="Tucson Temple" width="2" height="1" loading="lazy">
-            </picture>
-            <div id="hero-content">
-                <p>Tucson, Arizona Temple</p>
-            </div>
+        <div class="hero">
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/temple-400px.webp">
+            <source media="(max-width: 960px)" srcset="images/temple-960px.webp">
+            <img class="temple-1" src="images/temple-960px.webp" alt="Tucson Temple" width="2" height="1" loading="lazy">
+        </picture>
+        <div class="herolabel">
+          <p>Tucson, Arizona Temple</p>
+        </div>
         </div>
 
-        <h2 class="coursetitle">WDD 230: Course Activity Portal</h2>
-        <div class="card-container">
-            <section class="card" id="card-1">
-                <h3>Learning Activities</h3>
-                <ul id="activities">
-                    <li>Week 1:<a href="week01/media-query.html">Media Query</a> <a href="week01/holygrail.html">Holy Grail</a> <a href="week01/chamber-site-plan.html">Chamber Site Plan</a></li>
-                    <li>Week 2:<a href="week02/design.html">Design Principles</a> <a href="week02/menu.html">Menu</a> <a href="mode.html">Dark mode</a> <a href="chamber/index.html">Chamber home page</a></li>
-                    <li>Week 3:<a href="week03/images/landscape.webp">WebP</a> <a href="week03/lazyload.html">Lazy Loading</a> <a href="week03/reponsive-images.html">Responsive Images</a> <a href="week03/webstorage.html">Web Storage API</a></li>
-                </ul>
-            </section>
+        <h2>WDD 230: Course Activity Portal</h2>
+        <section class="card" id="activities">
+            <h3>Learning Activities</h3>
+            <ul class="activities">
+                <li>Week 1:<a href="week01/media-query.html">Media Query</a> <a href="week01/holygrail.html">Holy Grail</a> <a href="week01/chamber-site-plan.html">Chamber Site Plan</a></li>
+                <li>Week 2:<a href="week02/design.html">Design Principles</a> <a href="week02/menu.html">Menu</a> <a href="mode.html">Dark mode</a> <a href="chamber/index.html">Chamber home page</a></li>
+                <li>Week 3:<a href="week03/images/landscape.webp">WebP</a> <a href="week03/lazyload.html">Lazy Loading</a> <a href="week03/reponsive-images.html">Responsive Images</a> <a href="week03/webstorage.html">Web Storage API</a></li>
+            </ul>
+        </section>
 
-            <section class="card" id="card-3">
-                <h3>Information</h3>
-                <div id="weather">
-                  <h2>Weather: </h2>
-                </div>
-                <div>
-                  <h2>Visit Count: </h2>
-                </div>
-                <p><span id="visitCount">Visits: </span><span class="visits"></span></p>
-            </section>
+        <section class="card" id="project">
+            <h3>Project</h3>
+            <a href="chamber/index.html">Chamber Site</a>
+        </section>
 
+        <section class="card" id="information">
+            <h3>Information</h3>
+            <div>
+              <h2>Weather</h2>
+              <p> </p>
+            </div>
+            <div>
+              <h2>Visit Count: </h2>
+            </div>
+            <p><span class="visitcount">Visits: </span><span class="visits"></span></p>
+        </section>
 
-
-
-
-
-
-            <section class="project"  id="card-2">
-                <h3>Project</h3>
-                <div id="project">
-                    <a  href="chamber/index.html">Chamber site</a>
-                </div>
-            </section>
-
-            <section id="map">
-                <h3>Map</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d160605.70676809282!2d-110.89918712877379!3d32.00537488097998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1687397481772!5m2!1sen!2sus" 
+        <section class="map">
+            <h3>Map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d160605.70676809282!2d-110.89918712877379!3d32.00537488097998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1687397481772!5m2!1sen!2sus" 
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-        </div>
+        </section>
     </main>
 
     <footer>
@@ -116,7 +96,9 @@
     <script src="scripts/mode.js" defer></script>
     <script src="week02/scripts/menu.js"></script>
     <script src="scripts/visits.js"></script> 
+    <script src="scripts/visits.js"></script> 
+    <script src="week03/lazyload.html"></script>
+
 
 </body>
-
 </html>

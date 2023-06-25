@@ -1,251 +1,215 @@
-:root {
-    --required: 6px solid #9c2c13;
-    --input-border: solid 1px grey;
-    --valid: 6px solid green;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=East+Sea+Dokdo&display=swap');
+:root{
+	--blue-color: rgb(11, 92, 155);
+	--header-font:"Bebas Neue";
+	--text-font: "East Sea Dokdo";
+}
+main {
+	margin: 0;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 1rem;
+	width: 760px;
+	background-color: #eee;
+	color: #000;
+}
+/* nav section */
+.nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background: whitesmoke;
+	z-index: 10;
+	overflow: hidden;
+	box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
+}
+.nav li a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	width: 12rem;
+	padding: 1rem;
+	color: rgb(11, 92, 155);
+	position: relative;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	transition: background 0.5s ease-in-out;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+.nav li a:hover,
+.nav li:first-child a {
+	background: var(--blue-color);
+	color: whitesmoke;
 }
 
-nav {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+li a.nav-item {
+	display: none;
 }
 
-nav li {
-    display: block;
-    text-align: center;
+li a.open {
+	display: flex;
 }
 
-nav li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
+.close::before {
+	content: "✖ ";
 }
 
-nav svg path {
-    fill: #fff;
+
+
+main img {
+	float: right;
+	margin: 0 0 1rem 1rem;
+	border: 1px solid #333;
+	box-shadow: 0 0 15px #777;
 }
 
-#menu {
-    display: block;
+#mode {
+	
+	font-size: 3rem;
+	cursor: pointer;
+}
+
+
+
+svg {
+    filter: brightness(0) invert(1);
 }
 
 header {
-    display: flex;
-    align-items: center;
-    background-color: rgb(0, 64, 85);
-    max-height: 5rem;
-    justify-content: center;
+    color: white;
+    background-color: rgb(11, 92, 155);
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
 
-header h1 {
-    color: #fff;
-    font-size: 2rem;
-    padding: 1rem;
+h1 {
+    text-align: center;
+    margin: auto 0;
+    font-family: var(--header-font);
+    font-size: 45px;
 }
-
-header #profile-image {
-border-radius: 50%;
-    width: 4rem;
-    border: 3px solid #fff;
+.prof-pic {
+    min-width: 150px;
+    grid-column: 1 / 2;
+    padding: 10px;
+    margin-left: 3rem;
 }
 
 main {
-    background-color: #fff;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    color: black;
+    max-width: 760px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
 }
 
-main h2 {
-    color: #000;
-    font-size: 1.5rem;
-    padding: 0.5rem;
+.hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
 }
 
-.card-container {
-    flex-direction: column;
-    display: flex;
+.hero img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
 }
 
-.card {
-    background-color: rgb(211, 212, 185);
-    border: 1px solid #000;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding-bottom: 1rem;
-    width: 80%;
-    margin: 0.5rem;
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #3bc456);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	
 }
 
-.card li {
-    list-style: none;
-    padding: 0.5rem;
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family: "Bebas Neue";
 }
 
-.card h3 {
-    font-size: 1.5rem;
-    color: white;
-    background-color: rgb(0, 64, 85);
-    padding: 1rem;
-    margin-top: 0;
+h2 {
+    grid-column: 1/-1;
+    border-bottom: 1px solid black;
+    font-family: "Bebas Neue";
+    font-size: 35px;
 }
 
-#card-1 {
-    grid-column: 1/1;
-    grid-row: 1/3;
-}
-
-#card-2 {
-    grid-column: 2/2;
-    grid-row: 1/1;
-    text-align: center;
-}
-
-#card-3 {
-    grid-column: 2/2;
-    grid-row: 2/2;
-    text-align: center;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(0, 64, 85);
-    color: #fff;
-}
-
-.highlight {
-    color: rgb(191, 208, 0);
-}
-
-#lastModified {
-    font-size: 0.8rem;
-}
-
-.hidden {
-    display: none;
-}
-
-#hero img {
-    width: 100%;
-    height: auto;
-}
-
-#hero-content {
-    color: #fff;
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.299);
-    z-index: 1;
-    font-family: cursive;
-    padding: 2%;
-}
-
-form fieldset {
-    border: 1px solid #445ba9;
-    padding: 0.5rem;
+section {
+    box-shadow: 5px 5px 5px 5px rgba(11, 9, 119, 0.5);
+    border: 2px solid black;
     border-radius: 10px;
 }
 
-form legend {
-    color: #445ba9;
-    margin: 0 1rem;
-    padding: 0 0.5rem;
+#activities {
+    grid-column: 1 / 3;
+    grid-row: 3/4;
+    line-height: 2rem;
 }
 
-form label.top,form div {
-    display: block;
-    padding-top: 1rem;
-    color: red;
-    font-size: 0.8rem;
+#project {
+    grid-column: 2 / 3;
+	grid-row: 4/5;
 }
 
-form label.top input,form label.top select {
-    --webkit-appearance: none;
-    display: block;
-    font-size: 1rem;
-    border: var(--input-border);
-    border-radius: 4px;
-    padding: 0.75rem;
-    color: #555;
-    background-color: rgba(0, 0, 0, 0.1);
+#project a {
+    padding: 10px 0 0 20px;
 }
 
-form label.sbs {
-    display: block;
-    padding: 0.75rem 0;
-    color: #555;
-}
-
-form input.submitBtn {
-    border: none;
-    background-color: #9c2c13;
-    color: #fff;
-    border-radius: 1rem;
-    padding: 0.75rem;
-    margin-top: 10px;
-    width: 96%;
-    max-width: 20rem;
-}
-
-.ratingLabels {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 0;
-    color: #555;
-    max-width: 20rem;
-    width: 90%;
-}
-
-form label.top input:required {
-    border-left: var(--required)
-}
-
-form label.top input:required:valid {
-    border-left: var(--valid)
-}
-
-#formResponse table {
-    margin-top: 1rem;
-    border: 1px solid black;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-#formResponse th,
-td {
-    border: 1px solid black;
-    padding: 5px;
+#information {
+    grid-column: 1 / 2;
+	grid-row: 4/5;
 }
 
 
-#formResponse th {
-    background-color: #9c2c13;
+h3 {
+    background-color:var(--blue-color);
+    text-align: center;
     color: white;
+    margin: 0;
+    font-family: var(--header-font);
+    font-size: 35px;
+}
+section div, section a{
+    padding-left: 20px;
+    font-family: var(--text-font);
+    font-size: 25px;
+
 }
 
-
-#formResponse tr:nth-child(even) {
-    background-color: #8b8b8b7b;
+footer {
+    background-color: var(--blue-color);
+    text-align: center;
+    color: white;
+    
 }
 
-.red-rating {
-    background-color: rgb(255, 118, 118) !important;
+footer p {
+    margin: 20px;
+}
 
+.highlight {
+    font-size: 12px;
+    color: rgb(242, 245, 92);
+}
 
+ul {
+    list-style: none;
+    padding-left: 40px;
+    font-family: var(--text-font);
+    font-size: 25px;
+}
+.map{
+	grid-column: 1/3;
 }

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Righteous&display=swap');
+header{
+    background-color: gray;
+    color: white;
+    font-family: Righteous;
+}
+main{
+    background-color: white;
+    color: black;
+    font-family: Mukta;
+}
+footer{
+    background-color: gray;
+    color: white;
+    font-family: Mukta;
+}
+h2{
+    font-family: Righteous;
+}
+.typography div{
+    font-family: Righteous;
+}
+.typography p{
+    font-family: Mukta;
+}
