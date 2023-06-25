@@ -181,10 +181,10 @@ footer{
 #discover-imgs{
     grid-column: 2/3;
 }
-.gctemple-img:hover, #eac-img:hover, #mtgraham-img:hover{
+.gctemple-img:hover, #eac-img:hover, #mtgraham-img:hover, #roperlake-img:hover, #mtgrahamsnow-img:hover, #gvtemple-img:hover{
     box-shadow: 0 0 50px black;
    }
-   .gctemple-img, #eac-img, #mtgraham-img{
+   .gctemple-img, #eac-img, #mtgraham-img, #roperlake-img, #mtgrahamsnow-img, #gvtemple-img{
     text-align: center;
     
 }
