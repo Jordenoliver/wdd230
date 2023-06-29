@@ -7,10 +7,10 @@ const email = document.getElementById("email");
 const ratingInput = document.getElementById('rating');
 const ratingLabel = document.getElementById('ratingLabel');
 
-    
+
 form.addEventListener("submit", function (event) {
     event.preventDefault();
-        
+    
     if (password.value !== confirmPassword.value) {
         alert("Passwords do not match. Please try again.");
         username.value = "";
@@ -28,8 +28,8 @@ form.addEventListener("submit", function (event) {
         }
     }
 });
-    
+
 // Update the rating label when the range input value changes
 ratingInput.addEventListener('input', function() {
-    ratingLabel.innerHTML = 'Rating <small>(values from 1 to 10)</small>: ' + ratingInput.value;
+  ratingLabel.innerHTML = 'Rating <small>(values from 1 to 10)</small>: ' + ratingInput.value;
 });
