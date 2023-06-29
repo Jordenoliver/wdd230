@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Jorden Oliver's WDD230 Course Assignment Portal">
+    <meta name="Author" content="Jorden Oliver">
+    <title>Page Rating Register</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mode.css">
+    <link rel="stylesheet" href="week02/styles/menu.css">
+    <link rel="stylesheet" href="styles/mode.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jordenoliver.github.io/wdd230/">
+</head>
+
+<body>
+    <nav class="navbar" >
+        <ul class="nav">
+            <li title="home"><a href="#" id="nav-button">&#9776; Menu</a></li>
+            <li title="linkedin"><a href="https://github.com/Jordenoliver/wdd230/" class="nav-item">Github</a></li>
+            <li title="BYU-Pathway"><a href="https://byupathway.lds.org/" class="nav-item">BYU-pathway Worldwide</a></li>
+            <li title="survey"><a href="form.html" class="nav-item">Survey</a></li>
+            <li title="DarkMode"><a class="nav-item" id="mode">☀</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img class="prof-pic" src="images/profile.webp" alt="Profile Picture" loading="lazy">
+        <h1>Jorden Oliver</h1>
+    </header>
+
+    <main>
+        <h1 id="title-form">Page Rating Register</h1>
+        <div class="form-container">
+            <form id="myForm" method="get" action="record.html">
+                <fieldset>
+                    <legend>Register</legend>
+                        <label class="top" for="username">Username* <input type="text" id="username" name="username" title="Complete this field" required></label>
+                        <label class="top" for="password">Password* <input type="password" id="password" name="password" pattern="([A-Za-z0-9]).{8,}" title="at least eight (8) characters long and can only be alpha-numeric" required></label>
+                        <label class="top" for="confirmPassword">Confirm Password* <input type="password" id="confirmPassword" name="confirmPassword" title="Fill out the field above first" required></label>
+                        <p class="error-message" id="passwordError"></p>
+                        <label class="top" for="email">Email* <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="example@byui.edu" title="Please enter a valid email address" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Rating</legend>
+                    <label for="rating" id="ratingLabel">Rating <small>(values from 1 to 10)</small>: 5</label>
+                    <input type="range" id="rating" name="rating" min="1" max="10" step="1">
+                </fieldset>
+                <input type="submit" value="Send Rating">
+            </form>
+        </div>
+    </main>
+        
+    <footer>
+        <p class="footer-text">
+            &copy; <span id="year"></span> | Jorden Oliver | United States of America
+        </p>
+        <p class="highlight" id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/mode.js" defer></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/visits.js"></script> 
+    <script src="week03/lazyload.html"></script>
+    <script src="scripts/form.js"></script>
+
+
+</body>
+</html>
