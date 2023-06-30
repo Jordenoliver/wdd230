@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="WDD 230 Chamber Of Commerce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jorden Oliver">
+    <title> Thatcher Chamber of Commerce Join Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Open+Sans&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Thatcher Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jordenoliver.github.io/wdd230/chamber/index.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+
+<body>
+    <header>
+        <h1>Thatcher Chamber of Commerce</h1>
+        <p>Keeping you informed since we learned how to make this site</p>
+    </header>
+
+    <nav class="navbar" >
+        <ul class="nav">
+            <li title="menu home"><a href="#" id="nav-button">&#9776; Menu</a></li>
+            <li title="home"><a href="index.html" class="nav-item">Home</a></li>
+            <li title="discover"><a href="discover.html" class="nav-item">Discover</a></li>
+            <li title="join"> <a class="nav-item" >Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="form-center">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Member Information</legend>
+                    <label class="top"> First Name* <input type="text" name="fname" required></label>
+                    <label class="top"> Last Name* <input type="text" name="lname" required></label>
+                    <label class="top"> Position Title <input type="text" name="position" pattern="[\w\s\-]{7,}"></label>
+                    <label class="top"> Email* <input type="email" name="email" placeholder="someone@gmail.com" required ></label>
+                    <label class="top"> Phone* <input type="tel" name="phone" required></label>
+                    <label class="top"> Business Name/Title* <input type="text" name="businessName" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label class="member"><input type="radio" name="membershipLevel" > Non-Profit </label>
+                    <label class="member"><input type="radio" name="membershipLevel" > Bronze </label>
+                    <label class="member"><input type="radio" name="membershipLevel" > Silver </label>
+                    <label class="member"><input type="radio" name="membershipLevel" > Gold </label>
+                    <div>
+                        <h2>Non profit - no annual fees</h2>
+                        <ul><li>Newsletter</li><li>Advertising Opportunities</li></ul>
+                    
+                        <h2>Bronze - $100 annually</h2>
+                        <ul><li>Free spotlight once a month</li><li>Newsletter</li></ul>
+                    
+                        <h2>Silver - $175 annually</h2>
+                        <ul><li>Free spotlight once a month</li><li>Newsletter</li></ul>
+                    
+                        <h2>Gold - $250 annually</h2>
+                        <ul><li>Free spotlight 3 times a month</li><li>Free entry to events</li><li>Newsletter</li></ul>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label for="descripton-box" class="bottom"> Business Description </label>
+                    <textarea id="description-box" name="description-box" placeholder="We make the best cookies in town" rows="4" cols="50"></textarea>
+                    <label class="bottom"><input type="text" name="time"></label>
+                </fieldset>
+                <input type="submit" value="Join The Chamber" class="submitBtn">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <h5 id="name/address">City of Thatcher Chamber of Commerce  /  1233 Main Street, Thatcher, AZ 85629</h5>
+            <h5 id="email/phone">info@thatchercommerce.com  /  (928)111-2222</h5>
+            <h5>Jorden Oliver  /  WDD 230 Project  /  &copy; <span id="year"></span> </h5>
+        </section>
+
+    
+        <h5 class="highlight" id="lastModified">Last modified: <script>document.write(document.lastModified)</script></h5>
+    </footer>
+    
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/lastvisit.js"></script>
+
+    
+</body>
+</html>
