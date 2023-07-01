@@ -110,7 +110,7 @@ li a.open {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-#events-box, #spotlight-box, #weather-box, .column, .discover-events{
+#events-box, #news-box, #weather-box, .column, .discover-events{
     box-shadow: 2px 2px 2px 2px #290CE6;
     border: 2px solid black;
     border-radius: 10px;
