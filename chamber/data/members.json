@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Casa Mañana",
+            "address": "502 S 1st Ave, Safford, AZ 85546",
+            "phone": "928-428-3170",
+            "url": "https://casacrave.com/",
+            "icon": "./images/casa.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "Desert Cat Rescue & Sanctuary of Arizona",
+            "address": "Thatcher, AZ 85552",
+            "phone": "928-965-2971",
+            "url": "https://www.desertcatrescue.org/",
+            "icon": "./images/dcr.webp",
+            "membership": "NP"
+        },
+        {
+            "name": "Eastern Arizona College",
+            "address": "615 N Stadium Ave, Thatcher, AZ 85552",
+            "phone": "928-428-8472",
+            "url": "https://www.eac.edu/",
+            "icon": "./images/eacl.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "Wayne's Pit Stop Auto Repair",
+            "address": "3829 W Main St, Thatcher, AZ 85552",
+            "phone": "928-432-3194",
+            "url": "https://www.facebook.com/Waynespitstop/",
+            "icon": "./images/wpsa.webp",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Smith & Taylor Automotive",
+            "address": "415 S 8th Ave, Safford, AZ 85546",
+            "phone": "928-428-0760",
+            "url": "https://www.facebook.com/SmithTaylorAuto/",
+            "icon": "./images/sata.webp",
+            "membership": "Silver"
+        },
+        {
+            "name": "Families Fighting Cancer Together",
+            "address": "479 Arena Way, Thatcher, AZ 85552",
+            "phone": "928-238-2292",
+            "url": "https://ffct.us/",
+            "icon": "./images/ffct.webp",
+            "membership": "NP"
+        },
+        {
+            "name": "Gila Outdoor",
+            "address": "3660 W Main St, Thatcher, AZ 85552",
+            "phone": "928-348-0710",
+            "url": "https://gilavalleyoutdoor.com/",
+            "icon": "./images/gvo.webp",
+            "membership": "Bronze"
+        }
+    ]
+    }
