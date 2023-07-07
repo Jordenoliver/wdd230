@@ -50,12 +50,10 @@
                 </div>
             </div>
             <div id="content">    
-                <div >
-                    <div id="events-box">
-                        <h2>Current Events</h2>
-                        <h3>Firework show</h3>
-                        <p>Join us on Monday, July 4th, at the Safford Court House for a firework display like never before, starting at 7pm!</p>
-                    </div>
+                <div id="events-box">
+                    <h2>Current Events</h2>
+                    <h3>Firework show</h3>
+                    <p>Join us on Monday, July 4th, at the Safford Court House for a firework display like never before, starting at 7pm!</p>
                 </div>
             </div>
             <div id="news-box">
@@ -65,12 +63,20 @@
                     to Panda Express. This is due to the fact it has been over five years and
                     the building is still not done being built.</p>   
             </div>
-            <div>
-                <section id = "weather-box">
+            <div id = "weather-box">
+                <section class="card" id="info">
                     <h3>Current Weather</h3>
-                    <p></p>
+                    <p class="weather"><img id="weather-icon" src="images/" alt = "weather icon"><span id="figcaption"></span><span id="current-temp"></span>
+                        <span id="forecast1"></span><span id="forecast2"></span><span id="forecast3"></span>
+                        <span id="tempone"></span><span></span><span id="temptwo"></span><span></span><span id="tempthree"></span>
+                    </p>
                 </section>
             </div>
+            <section class = "members">
+                <h2>Our Gold and Silver Members</h2>
+                <div class="tier2">
+                </div>
+            </section>
         </div>
     </main>
     <footer>
@@ -87,6 +93,10 @@
 
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/weather.js" ></script>
+    <script src="scripts/spotlights.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/lastvisit.js"></script>
 
     
 </body>
